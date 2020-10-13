@@ -1,32 +1,46 @@
+@font-face {
+    font-family: 'LatoBold';
+    src: url(../res/fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'LatoLight';
+    src: url(../res/fonts/Lato-Light.ttf);
+}
+
 * {
     margin: 0;
+    font-family: 'LatoBold';
 }
 
 body {
     display: grid;
     height: 100%;
     grid-template-rows: 50px 50px 1fr 100px 100px;
-    grid-template-columns: 150px 1fr 150px;
+    overflow-x: hidden;
 }
 
 header {
     display: flex;
+    position: fixed;
     grid-column: 1/4;
     grid-row: 1/3;
     width: 100%;
     flex-direction: row;
     z-index: 1;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.4);
 }
 
 nav {
+    align-self: center;
+    flex-direction: row;
     width: 100%;
 }
 
 nav ul {
     position: relative;
     float: right;
-    right: 150px;
+    right: 7%;
 }
 
 ul li {
@@ -35,7 +49,9 @@ ul li {
 
 li a {
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 35px;
+    color: white;
+    font-size: 20pt;
 }
 
 li:last-child a {
@@ -60,10 +76,12 @@ main {
 
 #expand_arrow {
     position: sticky;
-    width: 50px;
     margin: auto;
     align-self: center;
     bottom: 0px;
+    font-size: 100px;
+    color: rgba(255,255,255,0.5);
+    filter: drop-shadow(5px 5px 20px black);
 }
 
 #video_cont {
@@ -78,8 +96,56 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: -1;
+    filter: brightness(75%);
+}
+
+#on_vid_text {
+    font-size: 80pt;
+    color: #EDE937;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bolder;
+}
+
+#on_vid_text i {
+    color: white;
+    font-family: 'LatoLight';
+}
+
+#vide-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0);
+    z-index: -1;
+    top:0;
 }
 
 footer {
     grid-row: 5/6;
+}
+
+
+/* Animations */
+
+.pointing {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: pointing_kf;
+}
+
+@keyframes pointing_kf {
+    0% {
+        transform: translate(0px, 0px) scale(2.2, 1);
+    }
+    50% {
+        transform: translate(0px, -20px) scale(2.5, 1);
+    }
+    100% {
+        transform: translate(0px, 0px) scale(2.2, 1);
+    }
 }
