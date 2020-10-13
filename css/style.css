@@ -101,19 +101,37 @@ main {
 }
 
 #on_vid_text {
-    font-size: 80pt;
-    color: #EDE937;
+    color: white;
+    font-size: 30pt;
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'LatoLight';
+}
+
+#on_vid_text bold {
+    font-size: 80pt;
+    color: #EDE937;
     font-weight: bolder;
 }
 
 #on_vid_text i {
-    color: white;
+    font-size: 80pt;
     font-family: 'LatoLight';
+    font-weight: bolder;
+}
+
+#gys_header {
+    position: relative;
+    font-size: 64pt;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#gys_header bold {
+    color: #EDE937;
 }
 
 #vide-overlay {
