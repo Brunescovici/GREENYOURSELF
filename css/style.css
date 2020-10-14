@@ -1,3 +1,4 @@
+/*
 @font-face {
     font-family: 'LatoBold';
     src: url(../res/fonts/Lato-Bold.ttf);
@@ -7,10 +8,13 @@
     font-family: 'LatoLight';
     src: url(../res/fonts/Lato-Light.ttf);
 }
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 * {
     margin: 0;
-    font-family: 'LatoBold';
+    font-family: Lato, sans-serif;
 }
 
 body {
@@ -81,7 +85,7 @@ main {
     bottom: 0px;
     font-size: 100px;
     color: rgba(255,255,255,0.5);
-    filter: drop-shadow(5px 5px 20px black);
+/*    filter: drop-shadow(5px 5px 20px black);*/
 }
 
 #video_cont {
@@ -113,13 +117,11 @@ main {
 
 #on_vid_text bold {
     font-size: 80pt;
-    color: #EDE937;
     font-weight: bolder;
 }
 
 #on_vid_text i {
     font-size: 80pt;
-    font-family: 'LatoLight';
     font-weight: bolder;
 }
 
@@ -130,7 +132,7 @@ main {
     text-align: center;
 }
 
-#gys_header bold {
+bold {
     color: #EDE937;
 }
 
@@ -141,6 +143,12 @@ main {
     background-color: rgba(255,255,255,0);
     z-index: -1;
     top:0;
+}
+
+#volunteer-header {
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
 }
 
 footer {
