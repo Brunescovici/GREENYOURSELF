@@ -81,7 +81,6 @@ main {
     bottom: 0px;
     font-size: 100px;
     color: rgba(255,255,255,0.5);
-    filter: drop-shadow(5px 5px 20px black);
 }
 
 #video_cont {
@@ -125,7 +124,8 @@ main {
 
 #gys_header {
     position: relative;
-    font-size: 64pt;
+    font-size: 5vw;
+    color: #004155;
     font-weight: bolder;
     text-align: center;
 }
@@ -141,6 +141,12 @@ main {
     background-color: rgba(255,255,255,0);
     z-index: -1;
     top:0;
+}
+
+#waw_header {
+    color: #004155;
+    margin-left: 10vw;
+    font-size: 3vw;
 }
 
 footer {
