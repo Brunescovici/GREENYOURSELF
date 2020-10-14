@@ -85,7 +85,6 @@ main {
     bottom: 0px;
     font-size: 100px;
     color: rgba(255,255,255,0.5);
-/*    filter: drop-shadow(5px 5px 20px black);*/
 }
 
 #video_cont {
@@ -127,8 +126,9 @@ main {
 
 #gys_header {
     position: relative;
-    font-size: 64pt;
-    font-weight: bolder;
+    font-size: 5vw;
+    color: #004155;
+    font-weight: 800;
     text-align: center;
 }
 
@@ -151,8 +151,39 @@ bold {
     object-fit: cover;
 }
 
+#waw {
+    font-weight: 600;
+}
+
+#waw p {
+    margin: 0 9vw;
+}
+
+#waw_header {
+    color: #004155;
+    margin-left: 10vw;
+    font-size: 3vw;
+    font-weight: 800;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
 footer {
     grid-row: 5/6;
+}
+
+/*media qs*/
+
+@media screen and (max-width: 700px) {
+    #gys_header {
+        font-size: 9vw;
+    }
+    #waw_header {
+        font-size: 7vw;
+        width: 100%;
+        text-align: center;
+        margin: 2vw 0;
+    }
 }
 
 
