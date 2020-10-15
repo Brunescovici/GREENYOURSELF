@@ -26,3 +26,19 @@ function changeT4() {
     document.querySelector("#item p").textContent = "5000 POINTS";
     document.querySelector("#T_explain").textContent = "Woa! You sure love volunteering, don't you? To reach this milestone in your journey, you need to have participated in a minimum of five events and have accumulated 2500 points. A color customizable shirt is sent out as a thank you gift and a small bagpack to use for shopping.";
 }
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("nav_logo").src="res/logos/small_logo.png";
+      document.getElementById("first_a").style.color = "#000000";
+      document.getElementById("second_a").style.color = "#000000";
+      document.getElementById("third_a").style.color = "#000000";
+  } else {
+    document.getElementById("nav_logo").src="res/logos/logo.png";
+      document.getElementById("first_a").style.color = "#FFFFFF";
+      document.getElementById("second_a").style.color = "#FFFFFF";
+      document.getElementById("third_a").style.color = "#FFFFFF";
+  }
+}
