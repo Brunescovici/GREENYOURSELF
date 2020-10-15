@@ -55,12 +55,18 @@ li a {
     text-decoration: none;
     margin-right: 35px;
     color: white;
-    font-size: 2vw;
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    font-weight: 600;
+
 }
 
 li:last-child a {
     margin-right: 0;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
+
 
 .logo {
     display: block;
@@ -76,6 +82,10 @@ main {
     grid-column: 1/4;
     height: 100%;
     display: grid;
+}
+
+p {
+    font-size: 1.1rem;
 }
 
 #expand_arrow {
@@ -112,7 +122,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'LatoLight';
+    font-family: Lato, sans-serif;
 }
 
 #on_vid_text bold {
@@ -137,6 +147,10 @@ bold {
     color: #EDE937;
 }
 
+h2 {
+    font-size: 2em;
+}
+
 #vide-overlay {
     position: absolute;
     width: 100%;
@@ -153,7 +167,7 @@ bold {
 }
 
 #waw {
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 1.5vw;
 }
 
@@ -169,7 +183,7 @@ bold {
 #waw_header {
     color: #004155;
     margin-left: 20vw;
-    font-size: 3vw;
+/*    font-size: 2rem;*/
     font-weight: 800;
     margin-top: 2vw;
     margin-bottom: 2vw;
@@ -177,12 +191,12 @@ bold {
 
 .lightBlueBg {
     background-color: #B7CAD4;
-    padding: 5vw 10vw;
+    padding: 2vw 10vw 2vw 4vw;
 }
 
 .lightBlueBg p {
     margin-bottom: 2vw;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .lightBlueBg p:last-child {
@@ -191,7 +205,7 @@ bold {
 
 .lightBlueBg h3 {
     color: #004155;
-    margin-left: 2.5vw;
+/*    margin-left: 2.5vw;*/
 }
 
 #whyVol_header {
@@ -275,8 +289,9 @@ footer img {
 }
 
 #volButDown {
-    width: 30vw;
-    font-size: 3vw;
+    letter-spacing: 2px;
+    width: 25vw;
+    font-size: 2.5vw;
     font-weight: 800;
     color: white;
     text-align: center;
@@ -284,7 +299,14 @@ footer img {
     padding: 20px 0;
     margin-bottom: 5vw;
     cursor: pointer;
+    transition: 0.7s;
 }
+
+#volButDown:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+
 
 
 /* Animations */
