@@ -122,7 +122,12 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+<<<<<<< HEAD
     font-family: Lato, sans-serif;
+=======
+    font-family: 'LatoLight';
+    background-color: rgba(0,0,0,0.7);
+>>>>>>> andrei
 }
 
 #on_vid_text bold {
@@ -254,10 +259,110 @@ footer img {
     background-size: contain;
 }
 
+/* Vol page */
+
+#vys_header {
+    position: relative;
+    font-size: 5vw;
+    color: #004155;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+}
+
+#vys_p {
+    font-weight: 600;
+    margin: 0 23vw;
+    margin-bottom: 3vw;
+}
+
+#hiw_header {
+    color: #004155;
+    margin-left: 20vw;
+    font-size: 3vw;
+    font-weight: 800;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+
+#hiw_sec h3 {
+    color: #004155;
+    margin-left: 17.5vw;
+}
+
+#hiw_sec p {
+    margin: 0 19vw;
+    margin-bottom: 1vw;
+    font-weight: 400;
+}
+
+#Tier_sec {
+    display: flex;
+    justify-content: center;
+    margin: 2vw 0;
+    color: white;
+    font-size: 2vw;
+}
+
+#Tier_sec div {
+    border-radius: 60px;
+    margin-right: 2vw;
+    padding: 0.3vw 3vw;
+    text-align: center;
+    width: 6vw;
+    cursor: pointer;
+    align-self: center;
+}
+
+#T1 {
+    background-color: #84e786;
+}
+
+#T2 {
+    background-color: #6cce6e;
+}
+
+#T3 {
+    background-color: #55b658;
+}
+
+#T4 {
+    background-color: #25852b;
+}
+
+#rew_sec {
+    margin: 4vw 15vw;
+}
+
+#item {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#item img {
+    width: 15vw;
+    align-self: flex-start;
+}
+
+#item p {
+    width: 15vw;
+    align-self: flex-start;
+    margin: 0;
+    text-align: center;
+}
+
+
+
 /*media qs*/
 
 @media screen and (max-width: 700px) {
     #gys_header {
+        font-size: 9vw;
+    }
+    #vys_header {
         font-size: 9vw;
     }
     #waw_header {
@@ -279,6 +384,15 @@ footer img {
         width: 30%;
         margin: 2vw 0;
         align-self: center;
+    }
+    #Tier_sec {
+        flex-direction: column;
+    }
+
+    #Tier_sec div {
+        width: 30vw;
+        font-size: 5vw;
+        margin-bottom: 3vw;
     }
 }
 
