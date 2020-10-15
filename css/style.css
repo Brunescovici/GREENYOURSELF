@@ -122,12 +122,7 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-<<<<<<< HEAD
     font-family: Lato, sans-serif;
-=======
-    font-family: 'LatoLight';
-    background-color: rgba(0,0,0,0.7);
->>>>>>> andrei
 }
 
 #on_vid_text bold {
