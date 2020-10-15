@@ -216,11 +216,10 @@ h2 {
 }
 
 #volunteer_pic {
-    background-image: url(../res/img/volunteer_pic.jpg);
+    background-image: url(../res/img/tom-ezzatkhah-0JbiBIHmQtE-unsplash.jpg);
     width: 100%;
     background-repeat:no-repeat;
     background-size: cover;
-    padding-right: 25vw;
 }
 
 .photoLeftAndTextRight {
@@ -249,7 +248,7 @@ footer img {
     background-image: url(../res/logos/logo2.png);
     width: 20%;
     height: auto;
-    margin: 3vw;
+    margin: 2vw;
     background-repeat: no-repeat;
     background-size: contain;
 }
