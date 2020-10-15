@@ -267,9 +267,13 @@ footer img {
 }
 
 #vys_p {
-    font-weight: 600;
+    font-weight: 500;
+    font-style: italic;
     margin: 0 23vw;
     margin-bottom: 3vw;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #004155;
 }
 
 #hiw_header {
@@ -291,6 +295,7 @@ footer img {
     margin: 0 19vw;
     margin-bottom: 1vw;
     font-weight: 400;
+    color: #004155;
 }
 
 #Tier_sec {
@@ -370,6 +375,8 @@ footer img {
     align-self: flex-start;
     margin: 0;
     text-align: center;
+    font-weight: 700;
+    color: #004155;
 }
 
 /*our work*/
