@@ -21,7 +21,7 @@
 body {
     display: grid;
     height: 100%;
-    grid-template-rows: 50px 50px 1fr 100px;
+    grid-template-rows: 50px 50px 1fr;
     overflow-x: hidden;
 }
 
@@ -349,7 +349,149 @@ footer img {
     text-align: center;
 }
 
+/*our work*/
 
+#ourWork_container {
+    background-color: #B7CAD4;
+}
+
+#ow_header {
+    grid-column: 1/-1;
+    color: #004155;
+    font-size: 2vw;
+    margin-left: 20vw;
+    margin-top: 5vw;
+    justify-self: start;
+}
+
+#clp_header {
+    grid-column: 1/-1;
+    justify-self: start;
+    color: #004155;
+    font-size: 1.5vw;
+    margin-left: 25vw;
+
+}
+
+#ow_p {
+    grid-column: 1/-1;
+    width:50vw;
+    margin: auto;
+    margin-left: 25vw;
+}
+
+#ourWork_container {
+    display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	grid-template-rows: repeat(auto-fill, minmax(1fr, 350px));
+	grid-row-gap: 20px;
+	justify-items: center;
+}
+
+#project1 {
+    display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	transition: all 0.5s;
+}
+
+#project1:hover {
+    opacity: 80%;
+	cursor: pointer;
+}
+
+#project1 > h1 {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	align-self: end;
+	text-align: center;
+	max-width: 320px;
+	color: white;
+	font-family: var(--mainText-font);
+	font-size: 24pt;
+	margin: 0 0 20px 0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+#project1 > img {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	width: 20rem;
+	height: 20rem;
+	max-width: 320px;
+	max-height: 320px;
+	object-fit: cover;
+}
+
+#project2 {
+    display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	transition: all 0.5s;
+}
+
+#project2:hover {
+    opacity: 80%;
+	cursor: pointer;
+}
+
+#project2 > h1 {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	align-self: end;
+	text-align: center;
+	max-width: 320px;
+	color: white;
+	font-family: var(--mainText-font);
+	font-size: 24pt;
+	margin: 0 0 20px 0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+#project2 > img {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	width: 20rem;
+	height: 20rem;
+	max-width: 320px;
+	max-height: 320px;
+	object-fit: cover;
+}
+
+#project3 {
+    display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	transition: all 0.5s;
+}
+
+#project3:hover {
+    opacity: 80%;
+	cursor: pointer;
+}
+
+#project3 > h1 {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	align-self: end;
+	text-align: center;
+	max-width: 320px;
+	color: white;
+	font-family: var(--mainText-font);
+	font-size: 24pt;
+	margin: 0 0 20px 0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+#project3 > img {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	width: 20rem;
+	height: 20rem;
+	max-width: 320px;
+	max-height: 320px;
+	object-fit: cover;
+}
 
 /*media qs*/
 
@@ -389,6 +531,36 @@ footer img {
         font-size: 5vw;
         margin-bottom: 3vw;
     }
+
+    #item {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    #item img {
+        width: 55vw;
+        align-self: center;
+    }
+
+    #item p {
+        width: 30vw;
+        align-self: center;
+        margin: 0;
+        text-align: center;
+    }
+    #ow_header {
+    color: #004155;
+    font-size: 6vw;
+    margin-left: 20vw;
+    margin-top: 5vw;
+    margin-bottom: 3vw;
+}
+
+#clp_header {
+    color: #004155;
+    font-size: 4vw;
+    margin-left: 25vw;
+}
 }
 
 .vButton {
@@ -415,6 +587,8 @@ footer img {
     transform: scale(1.1);
     transition: 0.7s;
 }
+
+
 
 
 
